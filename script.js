@@ -91,7 +91,7 @@ var j=0;
   for(let i=0;i<carts.length;i++){
     carts[i].addEventListener('click', ()=>{
       cartNumbers(products[i]);
-      cart.push(products[i]);
+      cart.push(products[i].id_product);
       console.log(cart[j++]);
         fetch("/", {
     method: "POST",
