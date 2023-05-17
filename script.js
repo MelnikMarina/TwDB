@@ -99,7 +99,7 @@ var j=0;
        'Content-Type': 'application/json'
     },
     body: JSON.stringify(cart)
-} { mode: 'no-cors'}).then(response => {
+}).then(response => {
     // this line of code depends upon what type of response you're expecting
     return response.text();
 }).then(result => {
