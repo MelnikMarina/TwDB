@@ -93,13 +93,13 @@ var j=0;
       cartNumbers(products[i]);
       cart.push(products[i].id_product);
       console.log(cart[j++]);
-        fetch("http://localhost:3000", { mode: 'no-cors'} {
+        fetch("http://localhost:3000", {
     method: "POST",
     headers: {
        'Content-Type': 'application/json'
     },
     body: JSON.stringify(cart)
-}).then(response => {
+} { mode: 'no-cors'}).then(response => {
     // this line of code depends upon what type of response you're expecting
     return response.text();
 }).then(result => {
