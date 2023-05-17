@@ -93,7 +93,7 @@ var j=0;
       cartNumbers(products[i]);
       cart.push(products[i].id_product);
       console.log(cart[j++]);
-        fetch("/", {
+        fetch("https://melnikmarina.github.io/TwDB/", {
     method: "POST",
     headers: {
        'Content-Type': 'application/json'
