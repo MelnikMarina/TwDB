@@ -90,7 +90,6 @@ var j=0;
   let carts = document.querySelectorAll(".btn");
   for(let i=0;i<carts.length;i++){
     carts[i].addEventListener('click', ()=>{
-      getRes();
       cartNumbers(products[i]);
       cart.push(products[i].id_product);
       console.log(cart[j++]);
