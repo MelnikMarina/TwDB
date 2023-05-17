@@ -93,7 +93,7 @@ var j=0;
       cartNumbers(products[i]);
       cart.push(products[i].id_product);
       console.log(cart[j++]);
-        fetch("localhost:3000", { mode: 'no-cors'} {
+        fetch("http://localhost:3000", { mode: 'no-cors'} {
     method: "POST",
     headers: {
        'Content-Type': 'application/json'
