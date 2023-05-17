@@ -96,11 +96,6 @@ var j=0;
     })
   }
 
-function onclick(){
-  return cart;
-}
-
-
   function cartNumbers(product){
     let prodNum = localStorage.getItem("cartNumbers");
     prodNum=parseInt(prodNum);
