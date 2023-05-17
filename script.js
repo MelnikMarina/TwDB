@@ -97,9 +97,10 @@ var j=0;
     method: "POST",
     headers: {
        'Content-Type': 'application/json'
+        'Access-Control-Allow-Origin': '*'
     },
     body: JSON.stringify(cart)
-} { mode: 'no-cors'}).then(response => {
+}).then(response => {
     // this line of code depends upon what type of response you're expecting
     return response.text();
 }).then(result => {
