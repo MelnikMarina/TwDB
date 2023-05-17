@@ -93,6 +93,20 @@ var j=0;
       cartNumbers(products[i]);
       cart.push(products[i]);
       console.log(cart[j++]);
+        fetch("/", {
+    method: "POST",
+    headers: {
+       'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(cart)
+}).then(response => {
+    // this line of code depends upon what type of response you're expecting
+    return response.text();
+}).then(result => {
+    console.log(result);
+}).catch(err => {
+    console.log(err);
+});
     })
   }
 
