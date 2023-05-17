@@ -93,7 +93,8 @@ var j=0;
       cartNumbers(products[i]);
       cart.push(products[i].id_product);
       console.log(cart[j++]);
-  }
+  })
+  }  
 
   function cartNumbers(product){
     let prodNum = localStorage.getItem("cartNumbers");
